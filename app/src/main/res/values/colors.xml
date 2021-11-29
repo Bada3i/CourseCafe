@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff59a0</color>
+    <color name="colorPrimaryDark">#D81B60</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bubble_gum_pink">#ff59a0</color>
+    <color name="white">#ffffff</color>
+    <color name="light_pink">#fff0f6</color>
+    <color name="darkish_pink">#d91e85</color>
+    <color name="brownish_grey_52">#85666666</color>
+    <color name="greyish_teal">#7ea5a4</color>
+    <color name="faded_red">#d13e59</color>
+    <color name="brownish_grey_51">#82666666</color>
+    <color name="rosy_pink">#ee5f64</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#324755</color>
+    <color name="bubblegum_pink">#F693CA</color>
+    <color name="light_pink_36">#5cfedeeb</color>
+    <color name="dark_grey_blue">#324755</color>
+    <color name="buttonTextColorEnabled">#FE5295</color>
+    <color name="buttonBGColorEnabled">#FFF</color>
+    <color name="buttonBGColorDisabled">#1D0606</color>
+    <color name="buttonTextColorDisabled">#DDD8D8</color>
+
+    <color name="green">#7CE19A</color>
+    <color name="greenDark">#074319</color>
+    <color name="red">#FA0707</color>
+    <color name="dark_grey">#595959</color>
+    <color name="message_color">#73777A</color>
+    <color name="date_color">#798186</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="link_blue">#2E4BEC</color>
+    <color name="blue">#3F51B5</color>
+
+
+</resources>

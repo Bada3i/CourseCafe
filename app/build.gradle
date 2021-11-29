@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "om.sas.coursecafe"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/INDEX.LIST'
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // Firebase Libraries
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    // To Place Profile Pic in Circular
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Image Loading Library from Google
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    // Test Libraries
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Recycler Viewer Libraries
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //Floating BTN Library
+    implementation 'com.google.android.material:material:1.2.0'
+    //Login by google
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    //Google MAP Services
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //Notifcation for chat
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    // paypal android sdk
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    //currency conversion
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //Gmail Background - auto email
+    implementation 'com.github.yesidlazaro:GmailBackground:1.2.0'
+
+}

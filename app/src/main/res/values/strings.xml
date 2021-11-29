@@ -1,0 +1,263 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Courses Cafe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login Page-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Do not have an account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="btn_guest">Guest Access</string>
+    <string name="or">OMR</string>
+    <string name="btn_google">Google Sign In</string>
+
+    <!-- Profile Page-->
+    <string name="no_courses">NO Courses Posted Yet!</string>
+
+
+    <!-- Row Item Profile-->
+    <string name="row_date">Date</string>
+    <string name="row_title">Title</string>
+
+    <!-- Forgot Password-->
+    <string name="fp_text_title">Forgot Password</string>
+    <string name="fp_email">Enter Your Email</string>
+    <string name="fp_hint">To Reset Your Password,
+    Kindly Enter Appropriate Email Below</string>
+
+
+    <!-- Edit Profile-->
+    <string name="user_name">User Name</string>
+    <string name="description">Information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="update_Profile">Update Profile</string>
+
+    <!--Register page -->
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="email_empty">email can not be empty </string>
+    <string name="pass_empty">password can not be empty </string>
+    <string name="username_empty">username can not be empty </string>
+    <string name="error_empty_fields">cant be empty ! </string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="have_account">Already Have an Account?</string>
+    <string name="username">Username</string>
+    <string name="usertype_normal">Normal User</string>
+    <string name="usertype_owner">Course Owner</string>
+
+    <!-- about us-->
+    <string name="about_us">In this Application we have provided for you different type of courses.
+    We welcome the institutes to add their courses in our application and this is done easily by contacting the administration.
+    If you are a specialized institute or an independent trainer you can offer your courses in a way that promotes the highest number of subscribers.
+    If you are looking for a training course in a particular filed, then you are at the right place.</string>
+
+    <!-- contact us-->
+    <string name="admin">Admin</string>
+    <string name="admin_name">Admin Name</string>
+    <string name="contact_us_inf">ContactUs Information</string>
+    <string name="app_email">courses.om@gmail.com</string>
+    <string name="contact_us">We do not end here,
+    you can contact us any time
+    and our representative will
+    get back to you shortly.</string>
+
+    <string name="no_pending_user">No More Pending User</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="email_validation">"Please Enter a valid Email Address!"</string>
+    <string name="normal_user">"No Join Courses Yet"</string>
+    <string name="select_picture">"Select Picture"</string>
+    <string name="chooseusertype">"Choose use type : "</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="register">Register</string>
+
+    <!-- admin information-->
+    <string name="admin_info">It is Admin Page, Kindly feel free to contact or drop a message for any matter required
+    Admin input, or support.
+    For reporting any profile/post/comments Please use the options on their pages.
+    for registering as owners, kindly contact us for the permission.</string>
+
+
+    <!-- Search Page -->
+    <string name="no_result">No Result Found</string>
+
+    <!-- Audience Page -->
+    <string name="no_list_audience">No Audience Found!</string>
+
+    <!-- Notification Page -->
+    <string name="no_list_notification">No Notification Found!</string>
+
+    <!-- Courses List Page -->
+    <string name="no_list_courses">No New Courses Found!</string>
+
+
+    <!-- PICK MAP Page -->
+    <string name="on_location">Turn on Location!</string>
+
+
+    <!-- General -->
+    <string name="message">Message</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+
+    <string name="image_not_found">Image not found!</string>
+    <string name="enter_user_name">Please.. Enter User Name!</string>
+    <string name="enter_email_address">Please Enter a valid Email Address!</string>
+    <string name="enter_valid_phone">Please Enter a valid Phone Number"</string>
+    <string name="verify_email">Please verify your email</string>
+    <string name="verify_email_send">verify Email was send to your email</string>
+    <string name="verify_email_send_admin">verify Email was send to Owner email</string>
+    <string name="need_permeation">You Need Permeation from Admin to Access</string>
+
+
+    <!-- Menu Items -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="new_post">New Post</string>
+    <string name="search">Search</string>
+
+
+    <string name="home_side_menu">HOME</string>
+    <string name="profile_side_menu">PROFILE</string>
+    <string name="notification_side_menu">NOTIFICATION</string>
+    <string name="search_side_menu">SEARCH</string>
+    <string name="logout_side_menu">LOGOUT</string>
+    <string name="contact_us_side_menu">CONTACT US</string>
+    <string name="about_us_side_menu">ABOUT US</string>
+    <string name="chat_side_menu">CHAT</string>
+
+    <!-- Drawer -->
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="audience_accepted">You Are Accepted for The Course : </string>
+    <string name="audience_rejected">You Are Rejected for The Course : </string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="courses_admin">Courses Cafe Admin</string>
+    <string name="user_pending">Pending User</string>
+    <string name="send_message">Send Message</string>
+    <string name="report_profile">Report User</string>
+
+    <string name="default_note_message">NO NOTIFICATIONS TO DISPLAY!</string>
+    <string name="no_audience">NO AUDIENCE REGISTERED YET!</string>
+    <string name="app_label">Courses Cafe</string>
+    <string name="search_hint">Search...</string>
+
+    <string name="choose_email_client">Choose Email Client . . .</string>
+    <string name="courses_apps">Courses Apps</string>
+
+
+    <!-- Add course page  -->
+    <string name="select_image">Select Picture</string>
+    <string name="end_date">end date</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_more_description">add more description</string>
+    <string name="location">Location</string>
+    <string name="start_time">start time</string>
+    <string name="end_time">end time</string>
+    <string name="start_date">start date</string>
+    <string name="institution_name">Institution Name</string>
+    <string name="course_title">Course Title</string>
+    <string name="offer_Type">Offer Type:</string>
+    <string name="offer_Details">Offer Details:</string>
+    <string name="report_post">Report Course</string>
+    <string name="block_user">Block User</string>
+    <string name="your_account_is_blocked">"Your Account is Blocked "</string>
+    <string name="no_block_user">No User Blocked</string>
+    <string name="user_status">User Status</string>
+    <string name="unblock">Unblock</string>
+    <string name="accept">Accept</string>
+    <string name="no_report_user">No User Reported</string>
+    <string name="report_user">Report User</string>
+    <string name="report">Reported List</string>
+    <string name="num_report">time Reported</string>
+    <string name="no_report_courses">No course Reported</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="report_course">Course Reported</string>
+    <string name="user_report">User Reported</string>
+    <string name="phone">Phone</string>
+    <string name="date">Date</string>
+    <string name="more_details">More Details</string>
+    <string name="time">Time</string>
+    <string name="price">Price </string>
+    <string name="offer">Offer</string>
+    <string name="request_to_join">Request to join</string>
+    <string name="no_offer">No Offer in this course</string>
+    <string name="plz_image">Please..You must add an image!</string>
+
+
+    <!-- Audience Dialog Related Texts-->
+    <string name="audience_register_request_text">Do You Want to Register in this Course!\nKindly Send Register Request to the Owner of the Course, by Clicking on (SEND) Button!!\n And Wait for the Confirmation, as You will Receive a Notification to Proceed with Payment.\n Thank You!!</string>
+    <string name="already_reg_text">You Already Registered in this Course</string>
+    <string name="payment_link"><u>Click on the Link to Proceed with Payment</u></string>
+
+
+    <!-- Titles-->
+    <string name="aboutUsTitle">About Us</string>
+    <string name="addCourseTitle">New Course</string>
+    <string name="audianceListTitle">Audience List</string>
+    <string name="blockUsersTitle">Blocked Users</string>
+    <string name="contactUsTitle">Contact Us</string>
+    <string name="courseListTitle">Available Courses</string>
+    <string name="searchTitle">Search</string>
+    <string name="courseDetailTitle">Course Detail</string>
+    <string name="displayLocationTitle">Display Location</string>
+    <string name="editCourseTitle">Edit Course Details</string>
+    <string name="editProfileTitle">Edit Profile</string>
+    <string name="notificationListTitle">Notification List</string>
+    <string name="offerTitle">Offer</string>
+    <string name="paymentDetailTitle">Payment Details</string>
+    <string name="paymentProcessTitle">Payment Process</string>
+    <string name="pendingUserTitle">Pending Users</string>
+    <string name="selectLocationTitle">Select Location</string>
+    <string name="profileTitle">Profile</string>
+    <string name="reportedCoursesTitle">Reported Courses</string>
+    <string name="reportedUsersTitle">Reported Users</string>
+    <string name="chatsScreenTitle">Chats</string>
+
+    <!-- Paypal URLs-->
+    <string name="PaypalPrivacyPolicyUri">https://www.paypal.com/webapps/mpp/ua/privacy-full</string>
+    <string name="PaypalUserAgreementUri">https://www.paypal.com/webapps/mpp/ua/useragreement-full</string>
+
+
+    <!--User Status-->
+
+    <string name="notPending">Not Pending</string>
+    <string name="pending">Pending</string>
+
+
+    <!--Currency Conversion-->
+
+    <string name="rates">rates</string>
+    <string name="currencyConverTo">USD</string>
+    <string name="currencyConvertFrom">OMR</string>
+
+    <string name="ok">OK</string>
+
+    <!--Dialogs-->
+    <string name="d_title_del_course">Delete Course</string>
+    <string name="d_msg_del_course">Are you sure you want to Delete this Course?</string>
+    <string name="d_title_rep_course">Report Course</string>
+    <string name="d_msg_rep_course">Are you sure you want to Report this Course?</string>
+    <string name="d_title_add_course">Add Course</string>
+    <string name="d_msg_add_course">Are you sure you want to Add this Course?</string>
+    <string name="d_title_unblock">Unblock User</string>
+    <string name="d_msg_unblock">Are you sure you want to Unblock this User?</string>
+    <string name="d_title_block">Block User</string>
+    <string name="d_msg_block">Are you sure you want to Block this User?</string>
+    <string name="d_title_rep_user">Report User</string>
+    <string name="d_msg_rep_user">Are you sure you want to Report this User?</string>
+    <string name="d_title_accept_user">Accept User</string>
+    <string name="d_msg_accept_user">Are you sure you want to Accept this User?</string>
+    <string name="online">Online</string>
+    <string name="discounted_products">Discounted: </string>
+    <string name="percentage">%</string>
+    <string name="final_payment">Final Payment: </string>
+</resources>

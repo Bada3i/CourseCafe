@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.dialog.UserTypeDialogFragment">
+
+    <TextView
+        android:id="@+id/tv_type_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/chooseusertype"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupradio_type_of_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_type_user"
+        app:layout_constraintStart_toStartOf="@+id/tv_type_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_user">
+
+
+        <RadioButton
+            android:id="@+id/radia1_course_owner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Course Owner"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radia2_normal_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Normal"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_add_user_type_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_shapes"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/groupradio_type_of_user"
+        app:layout_constraintStart_toStartOf="@+id/groupradio_type_of_user"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio_type_of_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

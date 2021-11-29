@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.fragments.AddCoursesFragment">
+
+
+        <TextView
+            android:id="@+id/tv_offer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_local_offer"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/discounted_products"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintStart_toStartOf="@+id/et_price"
+            app:layout_constraintTop_toBottomOf="@+id/et_price" />
+
+        <EditText
+            android:id="@+id/et_offer_details"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:inputType="number"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_offer_title"
+            app:layout_constraintStart_toEndOf="@+id/tv_offer_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_offer_title" />
+
+        <TextView
+            android:id="@+id/tv_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/percentage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"
+            app:layout_constraintBottom_toBottomOf="@+id/et_offer_details"
+            app:layout_constraintStart_toEndOf="@+id/et_offer_details"
+            app:layout_constraintTop_toTopOf="@+id/et_offer_details" />
+
+        <Switch
+            android:id="@+id/switch_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/et_offer_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_percentage"
+            app:layout_constraintTop_toTopOf="@+id/et_offer_details" />
+
+        <Button
+            android:id="@+id/btn_add_course"
+            android:layout_width="@dimen/size_300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:background="@drawable/text_shapes"
+            android:clickable="true"
+            android:text="@string/add_course"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonBGColorDisabled"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_offer_details" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/et_phone"
+            app:layout_constraintStart_toStartOf="@+id/et_phone"
+            app:layout_constraintTop_toBottomOf="@+id/et_phone">
+
+
+            <EditText
+                android:id="@+id/et_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableStart="@drawable/add_alarm_black_icon"
+                android:drawablePadding="@dimen/margin_8dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/start_time"
+                android:inputType="time"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/add_alarm_black_icon"
+                android:drawablePadding="@dimen/margin_8dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/end_time"
+                android:inputType="time"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/ll_time"
+            app:layout_constraintStart_toStartOf="@+id/ll_time"
+            app:layout_constraintTop_toBottomOf="@+id/ll_time">
+
+            <EditText
+                android:id="@+id/et_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_event_available_black_24dp"
+                android:drawablePadding="@dimen/margin_8dp"
+                android:ems="10"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:hint="@string/start_date"
+                android:inputType="date"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_event_available_black_24dp"
+                android:drawablePadding="@dimen/margin_8dp"
+                android:ems="10"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:hint="@string/end_date"
+                android:inputType="date"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:clickable="true"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_attach_money"
+            android:inputType="numberDecimal"
+            android:hint="@string/price"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/et_add_location"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_add_location"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_location" />
+
+        <RadioGroup
+            android:id="@+id/rg_type_of_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="@+id/ll_date"
+            app:layout_constraintStart_toStartOf="@+id/ll_date"
+            app:layout_constraintTop_toBottomOf="@+id/ll_date">
+
+
+            <RadioButton
+                android:id="@+id/rb_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/location"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_18" />
+
+            <RadioButton
+                android:id="@+id/rb_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_weight="1"
+                android:text="@string/online"
+                android:textSize="@dimen/text_18" />
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_add_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/pick_location_black"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:ems="10"
+            android:focusableInTouchMode="false"
+            android:hint="@string/location"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/rg_type_of_location"
+            app:layout_constraintStart_toStartOf="@+id/rg_type_of_location"
+            app:layout_constraintTop_toBottomOf="@+id/rg_type_of_location" />
+
+        <EditText
+            android:id="@+id/et_add_online"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_airplay"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:ems="10"
+            android:hint="@string/online"
+            android:visibility="invisible"
+            android:inputType="text"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/rg_type_of_location"
+            app:layout_constraintStart_toStartOf="@+id/rg_type_of_location"
+            app:layout_constraintTop_toBottomOf="@+id/rg_type_of_location" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:drawableStart="@drawable/ic_phone_profile"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/et_email"
+            app:layout_constraintStart_toStartOf="@+id/et_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:drawableStart="@drawable/ic_email_profile"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/et_title"
+            app:layout_constraintStart_toStartOf="@+id/et_title"
+            app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+        <EditText
+            android:id="@+id/et_institution"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:drawableStart="@drawable/ic_person_details"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:ems="10"
+            android:hint="@string/institution_name"
+            android:inputType="textPersonName"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/iv_img_add"
+            app:layout_constraintTop_toBottomOf="@+id/iv_img_add" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:drawableStart="@drawable/ic_title_black_24dp"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:ems="10"
+            android:hint="@string/course_title"
+            android:inputType="text"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/et_institution"
+            app:layout_constraintStart_toStartOf="@+id/et_institution"
+            app:layout_constraintTop_toBottomOf="@+id/et_institution" />
+
+        <ImageView
+            android:id="@+id/iv_img_add"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            tools:src="@tools:sample/avatars"
+            tools:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ib_add_Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_add_24"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_img_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="@+id/iv_img_add"
+            app:layout_constraintTop_toTopOf="@+id/iv_img_add"
+            app:layout_constraintVertical_bias="0.888" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

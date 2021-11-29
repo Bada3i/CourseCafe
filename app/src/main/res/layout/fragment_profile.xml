@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.fragments.ProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_bg_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p_pg_border_height"
+        android:alpha="0.2"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/p_pg_border_width"
+        android:layout_height="@dimen/p_pg_border_height"
+        android:background="@drawable/bg_profile_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_width="@dimen/p_image_width"
+        android:layout_height="@dimen/p_image_height"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="275dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="@color/bubblegum_pink"
+        app:civ_border_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="@string/user_name"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="5sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile_pic"
+        app:layout_constraintStart_toStartOf="@+id/iv_profile_pic"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_pic" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:hint="@string/description"
+        android:textSize="@dimen/text_14"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="-2sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+    <ImageButton
+        android:id="@+id/ib_phone"
+        android:layout_width="@dimen/p_btn_width"
+        android:layout_height="@dimen/p_btn_height"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="190dp"
+        android:background="@drawable/small_btn_shapes"
+        android:src="@drawable/ic_phone_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+
+    <ImageButton
+        android:id="@+id/ib_email"
+        android:layout_width="@dimen/p_btn_width"
+        android:layout_height="@dimen/p_btn_height"
+        android:layout_marginStart="190dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/ic_email_profile"
+        android:background="@drawable/small_btn_shapes"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ib_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_courses"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_phone" />
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/ib_phone"
+        android:layout_marginTop="60dp"
+        android:paddingTop="23dp"
+        android:text="@string/no_courses"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="@dimen/text_size"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_email" />
+
+
+    <TextView
+        android:id="@+id/tv_admin_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width"
+        android:layout_below="@id/ib_phone"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/text_shapes"
+        android:text="@string/admin_info"
+        android:paddingTop="23dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="@dimen/text_20"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_email" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_profile"
+        android:title="@string/edit_profile"
+        android:enabled="true"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/user_status"
+        android:title="@string/user_status"
+        android:enabled="true"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/user_pending"
+                android:title="@string/user_pending" />
+            <item android:id="@+id/block_user"
+                android:title="@string/block_user" />
+        </menu>
+
+
+    </item>
+
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        android:enabled="true"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/report_user"
+                android:title="@string/user_report" />
+            <item android:id="@+id/report_course"
+                android:title="@string/report_course" />
+        </menu>
+
+    </item>
+
+
+</menu>
